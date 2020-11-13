@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#skip {z-index:2;position:absolute;top:0;left:0;width:100%;}
+#skip li {width:100%;}
+#skip li a {display:block;line-height:0;font-size:0;text-align: center;background:rgb(155, 146, 146);color: antiquewhite;}
+#skip li a:focus {line-height:60px;font-size:20px;}
+/* 질문 : 탭 눌렀을 때 밑에 검정 라인 없애고 싶어요 */
+
+
+#wrap {z-index:1;position:relative;width:100%;margin:0 auto;}
+
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:98px;}
+#wrap #header.addHeader {background:rgba(0,0,0, .7);padding-bottom:15px;}
+#wrap #header .wrap {width:1230px;height:78px;margin:0 auto;background:transparent;padding-top:20px;}
+#wrap #header .wrap ul {width:100%;}
+/* 질문 */
+#wrap #header .wrap ul .left-wrap {float:left;width:310px;height:78px;}
+#wrap #header .wrap ul .left-wrap a {display:block;padding-top:24px;color:#fff;}
+#wrap #header .wrap ul .left-wrap a h2 {font-size:22.5px;font-weight:900;}
+#wrap #header .wrap ul .left-wrap a h1 {font-size:32.5px;font-weight:900;}
+#wrap #header .wrap ul .left-wrap a:hover h1 {text-decoration:underline;}
+
+#wrap #header .wrap ul .right-wrap {float:left;width:890px;height:78px;}
+#wrap #header .wrap ul .right-wrap #aside {width:100%;height:34px;text-align:right;}
+#wrap #header .wrap ul .right-wrap #aside ul {display:inline-block;padding:6px 1px 6px 24px;}
+#wrap #header .wrap ul .right-wrap #aside ul li {display:inline-block;height:26px;margin-left:25px;}
+#wrap #header .wrap ul .right-wrap #aside ul li i {width:100%;color:#fff;}
+#wrap #header .wrap ul .right-wrap #aside ul li a {font-size:14px;font-weight:300;color:#fff;}
+#wrap #header .wrap ul .right-wrap #aside ul li a:hover {text-decoration:underline;}
+#wrap #header .wrap ul .right-wrap #aside ul li a img {}
+
+#wrap #header .wrap ul .right-wrap #nav {width:935px;height:47.375px;text-align:right;}
+#wrap #header .wrap ul .right-wrap #nav ul {display:inline-block;}
+#wrap #header .wrap ul .right-wrap #nav ul li {display:inline-block;}
+#wrap #header .wrap ul .right-wrap #nav ul li a {display:block;font-size:24px;font-weight:300;padding:10px 20px 10px 20px;color:#fff;}
+#wrap #header .wrap ul .right-wrap #nav ul li a:hover {text-decoration:underline;}
+#wrap #header .wrap ul .right-wrap #nav ul li:last-child a.side-menu {position:relative;width:18px;height:14px;padding:0;}
+#wrap #header .wrap ul .right-wrap #nav ul li:last-child a.side-menu .SMline {position:absolute;left:0;display:block;width:18px;height:2px;background:#fff;}
+#wrap #header .wrap ul .right-wrap #nav ul li:last-child a.side-menu .SMline1 {top:0;}
+#wrap #header .wrap ul .right-wrap #nav ul li:last-child a.side-menu .SMline2 {top:50%;margin-top:-1px;}
+#wrap #header .wrap ul .right-wrap #nav ul li:last-child a.side-menu .SMline3 {bottom:0;}
+
+#wrap #main   {z-index:2;position:relative;width:100%;background:#fff;}
+
+/* 질문 : 이미지가 cover여서 css에 백그라운드로도 넣어봤는데 그럼 이미지들 사이에 여백이 생겨요 */
+#wrap #main #section1 {width:100%;height:750px;background:#ccc;}
+#wrap #main #section1 .wrap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .slide-container {position:relative;width:100%;height:750px;}
+#wrap #main #section1 .wrap .slide-container .slide-view {position:relative;width:100%;height:750px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap {width:calc(1903px*11);margin-left:-1903px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide img {z-index:1;position:relative;height:750px;width:100%;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide:nth-child(2):after {z-index:2;content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:#252525;opacity:.3;}
+
+/* 질문 : 글씨 길이만큼 박스 줄이고 싶어요 */
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div {z-index:3;position:relative;width:1230px;margin:0 auto;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span {display:inline-block;width:auto;height:120px;position:absolute;bottom:30px;left:-165px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a {display:block;width:auto;height:120px;font-weight:300;color:#303132;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div {padding:20px 20px;background:#fff;width:auto;height:80px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div h2 {display:inline-block;font-size:40px;line-height:44px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div h4  {text-align:left;font-size:20px;line-height:normal;}
+
+
+
+#wrap #main #section2 {width:1290px;/* 임시높이 */height:400px;background:#ddd;margin:0 auto;}
+#wrap #main #section2 .wrap {width:1230px;padding:20px 30px;}
+#wrap #main #section2 .wrap .text {}
+#wrap #main #section2 .wrap .text .left {float:left;}
+#wrap #main #section2 .wrap .text .left h1 {}
+#wrap #main #section2 .wrap .text .right {float:right;}
+#wrap #main #section2 .wrap .text .right span {}
+#wrap #main #section2 .wrap .text .right span a {}
+
+#wrap #main #section2 .wrap .img {}
+#wrap #main #section2 .wrap .img div {}
+#wrap #main #section2 .wrap .img div a {display:inline-block;}
+#wrap #main #section2 .wrap .img div a img {width:254px;height:202.250px;}
+#wrap #main #section2 .wrap .img div a p {display:inline-block;transform:rotate(270deg);padding-right:30px;}
+
+
+#wrap #main #section3 {width:1290px;/* 임시높이 */height:700px;background:#eee;margin:0 auto;}
+#wrap #main #section3 .wrap {width:1230px;padding:20px 30px;}
+#wrap #main #section4 {width:1290px;/* 임시높이 */height:550px;background:#ddd;margin:0 auto;}
+#wrap #main #section4 .wrap {width:1230px;padding:20px 30px;}
+#wrap #main #section5 {width:1290px;/* 임시높이 */height:400px;background:#eee;margin:0 auto;}
+#wrap #main #section5 .wrap {width:1230px;padding:20px 30px;}
+#wrap #main #section6 {width:1290px;/* 임시높이 */height:300px;background:#ddd;margin:0 auto;}
+#wrap #main #section6 .wrap {width:1230px;padding:20px 30px;}
+
+#wrap #footer {z-index:1;position:relative;width:100%;height:175px;background:#fff;padding:80px 0 40px;}
+#wrap #footer .wrap {width:1230px;height:175px;padding:0 5px;box-sizing:border-box;margin:0 auto;text-align:center;}
+#wrap #footer .wrap .row1 {width:100%;}
+#wrap #footer .wrap .row1 ul {width:100%;}
+#wrap #footer .wrap .row1 ul li {display:inline-block;width:14px;height:19px;padding:5px 10px;box-sizing:border-box;}
+#wrap #footer .wrap .row1 ul li:hover {}
+/* 질문 : goTop 마우스 올렸을 때 위아래로 움직이는 거 bottom 값으로 줬었는데, 포지션 안줄때는 어떻게 할 수 있을까요  */
+#wrap #footer .wrap .row1 ul li a {display:inline-block;line-height:16px;}
+#wrap #footer .wrap .row1 ul li a:hover {background-color:rgba(238,238,238, .5);}
+#wrap #footer .wrap .row1 ul li a img {/* 임시이미지 */width:19px;height:19px;}
+
+#wrap #footer .wrap hr {width:1230px;height:0;border-bottom:1px solid #e6e6e6;margin:20px 0;display:block;}
+
+#wrap #footer .wrap .row2 {width:100%;}
+#wrap #footer .wrap .row2 ul {width:100%;margin-bottom:16px;}
+#wrap #footer .wrap .row2 ul li {width:100%;text-align:center;}
+#wrap #footer .wrap .row2 ul li span {font-size:12px;box-sizing:border-box;margin:0 auto;display:inline-block;line-height:19.2px;}
+#wrap #footer .wrap .row2 ul li span br {display:block;}
+
+/* 질문 : 중앙정렬이 아니예요 */
+#wrap #footer .wrap .row3 {width:100%;}
+#wrap #footer .wrap .row3 ul {width:100%;}
+#wrap #footer .wrap .row3 ul li {width:100%;}
+#wrap #footer .wrap .row3 ul li span {display:inline-block;}
+#wrap #footer .wrap .row3 ul li span a {font-size:14px;}
+#wrap #footer .wrap .row3 ul li span a:hover {text-decoration:underline;}
+#wrap #footer .wrap .row3 ul li span i {margin:0 10px;}

@@ -1,0 +1,39 @@
+포트폴리오 디버깅
+
+********** 마크업 검사 *************
+
+에러 라인 148, 칼럼 241: Duplicate ID Livello_1.
+…nd:new 0 0 65 44" xml:space="preserve"><g><g><defs><rect id="SVGID_1_CONTACT" …
+
+경고 라인 71, 칼럼 274: The first occurrence of ID Livello_1 was here.
+…-278.5 378 55 38" xml:space="preserve"><style type="text/css">.home0{clip-path…
+
+에러 라인 331, 칼럼 168: Bad value 343.125 for attribute height on element object: Expected a digit but saw . instead.
+…mg_1.gif" width="610" height="343.125"></object></div><div class="text-wrap"><…
+
+경고 라인 2, 칼럼 16: This document appears to be written in 영어 but the html start tag has lang="ko". Consider using lang="en" (or variant) instead.
+<html lang="ko">
+
+경고 라인 289, 칼럼 28: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+                        <h1>Collection finder</h1>
+
+경고 라인 355, 칼럼 24: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+                    <h1>Ceramica Sant'Agostino: Italian ceramic tiles</h1>
+
+에러 라인 191, 칼럼 197: Element div not allowed as child of element a in this context. (Suppressing further errors from this subtree.)
+…cale.png" alt="Bathroom tiles"></div><div><span>Bathroom tiles</span></div></a>
+
+************* css 검사 통과 **************
+
+
+************ 크로스 브라우징 ************
+
+* 섹션1에 하얀박스가 익스에서만 자리가 바뀌어요
+
+
+
+************* 질문 ************
+
+* 햄버거메뉴 안에 글씨 호버시 밑줄 여백주기
+
+* 섹션2 

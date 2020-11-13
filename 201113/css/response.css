@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media all and (max-width:1200px){
+
+    #wrap #main #section3 {top:0;opacity:1;}
+    #wrap #main #section4 {top:0;opacity:1;}
+    #wrap #main #section5 {top:0;opacity:1;}
+    #wrap #main #section6 {top:0;opacity:1;}
+    #wrap #main #footer {top:0;opacity:1;}
+}

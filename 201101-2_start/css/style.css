@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#skip {z-index:2;position:absolute;top:0;left:0;width:100%;}
+#skip li {width:100%;}
+#skip li a {display:block;line-height:0;font-size:0;text-align: center;background:rgb(155, 146, 146);color: antiquewhite;}
+#skip li a:focus {line-height:60px;font-size:20px;}
+/* 질문 : 탭 눌렀을 때 밑에 검정 라인 없애고 싶어요 */
+
+
+#wrap {z-index:1;position:relative;width:100%;margin:0 auto;}
+
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:98px;}
+#wrap #header .wrap {width:1230px;height:98px;margin:0 auto;background:rgba(238,238,238, .5);}
+#wrap #header .wrap ul {width:100%;}
+#wrap #header .wrap ul li {height:98px;}
+/* 질문 */
+#wrap #header .wrap ul li:nth-child(1) {float:left;width:310px;background:rgba(137, 247, 237, 0.2);}
+#wrap #header .wrap ul li:nth-child(2) {width:100%;}
+#wrap #header .wrap ul li:nth-child(2) ul {width:100%;float:right;width:719px;background:rgba(221, 133, 133, .2);}
+#wrap #header .wrap ul li:nth-child(2) ul li {width:100%;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) {width:100%;text-align:right;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside {width:100%;height:50px;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside ul {display:inline-block;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside ul li {display:inline-block;line-height:14px;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside ul li:last-child i {color:#fff;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside ul li            a {display:block;color:#000;font-size:14px;}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(1) #aside ul li            img {}
+
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(2) {}
+#wrap #header .wrap ul li:nth-child(2) ul li:nth-child(2) #nav{}
+
+#wrap #main   {z-index:2;position:relative;width:100%;background:rgba(238,238,238, .5);}
+
+/* 질문 : 이미지가 cover여서 css에 백그라운드로도 넣어봤는데 그럼 이미지들 사이에 여백이 생겨요 */
+#wrap #main #section1 {width:100%;height:750px;background:rgba(238,238,238, .5);}
+#wrap #main #section1 .wrap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .slide-container {width:100%;height:750px;}
+#wrap #main #section1 .wrap .slide-container .slide-view {position:relative;width:100%;height:750px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap {width:calc(1903px*11);margin-left:-1903px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide img {z-index:1;position:relative;height:750px;width:100%;}
+
+/* 질문 : 글씨 길이만큼 박스 줄이고 싶어요 */
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div {z-index:2;position:relative;width:1230px;margin:0 auto;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span {position:absolute;bottom:30px;left:0;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a {display:block;height:120px;font-weight:300;color:#303132;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div {padding:20px 20px;background:#fff;height:80px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div h2 {display:inline-block;font-size:40px;line-height:44px;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide div span a div p  {font-size:20px;line-height:normal;}
+
+#wrap #main #section2 {width:1230px;/* 임시높이 */height:400px;padding:0 5px;background:#ddd;margin:0 auto;}
+#wrap #main #section3 {width:1230px;/* 임시높이 */height:700px;padding:0 5px;background:#eee;margin:0 auto;}
+#wrap #main #section4 {width:1230px;/* 임시높이 */height:550px;padding:0 5px;background:#ddd;margin:0 auto;}
+#wrap #main #section5 {width:1230px;/* 임시높이 */height:400px;padding:0 5px;background:#eee;margin:0 auto;}
+#wrap #main #section6 {width:1230px;/* 임시높이 */height:300px;padding:0 5px;background:#ddd;margin:0 auto;}
+
+#wrap #footer {z-index:1;position:relative;width:100%;height:175px;background:#fff;padding:80px 0 40px;}
+#wrap #footer .wrap {width:1230px;height:175px;padding:0 5px;box-sizing:border-box;margin:0 auto;text-align:center;}
+#wrap #footer .wrap .row1 {width:100%;}
+#wrap #footer .wrap .row1 ul {width:100%;}
+#wrap #footer .wrap .row1 ul li {display:inline-block;width:14px;height:19px;padding:5px 10px;box-sizing:border-box;}
+#wrap #footer .wrap .row1 ul li:hover {}
+/* 질문 : goTop 마우스 올렸을 때 위아래로 움직이는 거 bottom 값으로 줬었는데, 포지션 안줄때는 어떻게 할 수 있을까요  */
+#wrap #footer .wrap .row1 ul li a {display:inline-block;line-height:16px;}
+#wrap #footer .wrap .row1 ul li a:hover {background-color:rgba(238,238,238, .5);}
+#wrap #footer .wrap .row1 ul li a img {/* 임시이미지 */width:19px;height:19px;}
+
+#wrap #footer .wrap hr {width:1230px;height:0;border-bottom:1px solid #e6e6e6;margin:20px 0;display:block;}
+
+#wrap #footer .wrap .row2 {width:100%;}
+#wrap #footer .wrap .row2 ul {width:100%;margin-bottom:16px;}
+#wrap #footer .wrap .row2 ul li {width:100%;text-align:center;}
+#wrap #footer .wrap .row2 ul li span {font-size:12px;box-sizing:border-box;margin:0 auto;display:inline-block;line-height:19.2px;}
+#wrap #footer .wrap .row2 ul li span br {display:block;}
+
+/* 질문 : 중앙정렬이 아니예요 */
+#wrap #footer .wrap .row3 {width:100%;}
+#wrap #footer .wrap .row3 ul {width:100%;}
+#wrap #footer .wrap .row3 ul li {width:100%;}
+#wrap #footer .wrap .row3 ul li span {display:inline-block;}
+#wrap #footer .wrap .row3 ul li span a {font-size:14px;}
+#wrap #footer .wrap .row3 ul li span a:hover {text-decoration:underline;}
+#wrap #footer .wrap .row3 ul li span i {margin:0 10px;}
